@@ -1,4 +1,42 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.container {
+  max-width: 1320px;
+  padding: 0 12px;
+  margin: 0 auto;
+}
+
+.background {
+  background: $main;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  font-family: $font_ch;
+  height: 80px;
+  .logo {
+    display: block;
+    width: 80px;
+    height: 50px;
+    background-image: url("https://i.imgur.com/K0h720j.png");
+    // background-image: url(../../images/logo-new1.png);
+    background-size: cover;
+    background-position: center;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  a {
+    color: $txt_light;
+    text-decoration: none;
+  }
+
+  .nav {
+    display: flex;
+    margin-left: auto;
+
+    li {
+      margin-left: 64px;
+    }
+  }
 }

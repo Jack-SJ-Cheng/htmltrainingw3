@@ -1,4 +1,58 @@
+.background{
+  background-color: $main;
+}
+.container{
+  max-width: 1320px;
+  padding: 0 12px;
+  margin: 0 auto;
+}
+
 .footer{
-  background: #69F0AE;
-  font-size: 64px;
+  padding-top: 48px;
+  color: $txt_light;
+  a{
+    text-decoration: none;
+    color: $txt_light;
+  }
+  .linkGroup{
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    .nav{
+      margin-right: auto;
+      display: flex;
+      li{
+        margin-right: 48px;
+      }
+    }
+    .community{
+      display: flex;
+      li{
+        margin-left: 32px;
+      }
+    }
+  }
+  .contact{
+    padding-top: 24px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid $txt_light;
+    li{
+      display: flex;
+      align-items: center;
+      span{
+        margin-right: 20px;
+      }
+    }
+  }
+  .foot{
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    .copyright{
+      margin-right: auto;
+    }
+    .terms2{
+      margin-left: 48px;
+    }
+  }
 }
