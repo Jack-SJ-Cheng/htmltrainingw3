@@ -12,34 +12,30 @@ $font_ch: 'Noto Sans TC';
 
 .h1{
     font-size: 64px;
-    line-height: 1.5;
 }
 .h2{
     font-size: 48px;
-    line-height: 1.5px;
 }
 .h3{
     font-size: 36px;
-    line-height: 1.5;
 }
 .txt-l{
     font-size: 24px;
-    line-height: 1.5;
 }
 .txt-m{
     font-size: 20px;
-    line-height: 1.5;
 }
 .txt-s{
     font-size: 16px;
-    line-height: 1.5;
 }
 .txt-xs{
     font-size: 14px;
-    line-height: 1.5;
 }
 .bold{
     font-weight: bold;
+}
+.black{
+    font-weight: 900;
 }
 .medium{
     font-weight: 500;
@@ -49,4 +45,7 @@ $font_ch: 'Noto Sans TC';
 }
 .font_ch{
     font-family: $font_ch;
+}
+.italic{
+    font-style: italic;
 }
