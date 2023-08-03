@@ -19,5 +19,26 @@
                 margin-bottom: 8px;
             }
         }
+    } 
+}
+@media(max-width: 768px){
+    .commonQuestions{
+        padding-top: 80px;
+    }
+}
+@media (max-width: 375px) {
+    .commonQuestions{
+        padding-top: 40px;
+        padding-bottom: 64px;
+        h2{
+            margin-bottom: 24px;
+        }
+        .questions{
+            .faq{
+                &:not(:last-child){
+                    margin-bottom: 24px;
+                }
+            }
+        }
     }
 }

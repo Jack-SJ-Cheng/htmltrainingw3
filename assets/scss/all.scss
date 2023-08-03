@@ -4,7 +4,9 @@
 
 @import './layout/header';
 @import './layout/footer';
-@import './layout/pagination';
+
+@import './components/pagination';
+@import './components/bread';
 
 
 @import './pages/index';
@@ -14,3 +16,4 @@
 @import './pages/seriesOptical';
 @import './pages/seriesSunglasses';
 @import './pages/blog';
+@import './pages/planning';
