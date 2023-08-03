@@ -2,12 +2,15 @@
 @import './base/font';
 @import './themes/color';
 
-@import './layout/header.scss';
-@import './layout/footer.scss';
+@import './layout/header';
+@import './layout/footer';
+@import './layout/pagination';
 
 
 @import './pages/index';
 @import './pages/faq';
-@import './pages/stores.scss';
+@import './pages/stores';
 @import './pages/storeInfo';
-@import './pages/seriesFrame';
+@import './pages/seriesOptical';
+@import './pages/seriesSunglasses';
+@import './pages/blog';

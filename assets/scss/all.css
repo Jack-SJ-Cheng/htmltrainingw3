@@ -118,6 +118,7 @@ img {
 
 body {
   line-height: 1.5;
+  font-family: "Noto Sans TC", serif;
 }
 
 .container {
@@ -316,6 +317,38 @@ body {
   }
   .footer .foot .terms2 {
     margin: 0;
+  }
+}
+.outerBox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination {
+  display: flex;
+}
+.pagination .page {
+  border: 1px solid #555555;
+  padding: 12px 16px;
+  font-size: 18px;
+}
+.pagination .page2 {
+  background-color: #000000;
+  color: #ffffff;
+}
+.pagination .next,
+.pagination .prev {
+  font-size: 19px;
+}
+.pagination .next {
+  background-color: #F2F2F2;
+}
+
+@media (max-width: 375px) {
+  .pagination .page {
+    font-size: 16px;
+    padding: 12px 13px;
   }
 }
 body {
@@ -759,157 +792,458 @@ body {
     width: 100%;
   }
 }
-.seriesFrame {
+.seriesOptical {
   padding-bottom: 80px;
 }
-.seriesFrame .seriesOptions, .seriesFrame .seriesOptions_s {
+.seriesOptical .seriesOptions, .seriesOptical .seriesOptions_s {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   font-size: 32px;
+  border-bottom: 1px solid #DCDCDC;
 }
-.seriesFrame .seriesOptions li, .seriesFrame .seriesOptions_s li {
+.seriesOptical .seriesOptions .choose, .seriesOptical .seriesOptions_s .choose {
+  border-bottom: 8px solid #AA0601;
+}
+.seriesOptical .seriesOptions .notChoose, .seriesOptical .seriesOptions_s .notChoose {
+  border-bottom: 8px solid rgba(0, 0, 0, 0);
+}
+.seriesOptical .seriesOptions li, .seriesOptical .seriesOptions_s li {
   flex-grow: 1;
   text-align: center;
-  border: 1px solid #DCDCDC;
+  border-left: 1px solid #DCDCDC;
+  border-right: 1px solid #DCDCDC;
 }
-.seriesFrame .seriesOptions a, .seriesFrame .seriesOptions_s a {
+.seriesOptical .seriesOptions a, .seriesOptical .seriesOptions_s a {
   padding-top: 24px;
-  padding-bottom: 24px;
+  padding-bottom: 16px;
   display: block;
   text-decoration: none;
   color: #000000;
 }
-.seriesFrame .seriesOptions_s {
+.seriesOptical .seriesOptions_s {
   display: none;
 }
-.seriesFrame .pictures {
+.seriesOptical .pictures {
   display: flex;
   margin-bottom: 80px;
 }
-.seriesFrame .seriesName {
+.seriesOptical .seriesName {
   font-size: 42px;
   text-align: center;
 }
-.seriesFrame .seriesName_ch {
+.seriesOptical .seriesName_ch {
   text-align: center;
   font-size: 32px;
   margin-bottom: 32px;
 }
-.seriesFrame .products {
+.seriesOptical .products {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.seriesFrame .glasses {
+.seriesOptical .glasses {
   display: flex;
   flex-wrap: wrap;
   gap: 80px 24px;
   width: 100%;
   margin-bottom: 80px;
 }
-.seriesFrame .glasses .card {
+.seriesOptical .glasses .card {
   width: 21%;
   flex-grow: 1;
 }
-.seriesFrame .glasses .cardBody {
+.seriesOptical .glasses .cardBody {
   font-size: 24px;
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-.seriesFrame .glasses .cardBody p {
+.seriesOptical .glasses .cardBody p {
   text-align: justify;
 }
-.seriesFrame .glasses .cardBody .price {
+.seriesOptical .glasses .cardBody .price {
   color: #650300;
   font-weight: 500;
 }
-.seriesFrame .glasses .cardFooter a {
+.seriesOptical .glasses .cardFooter a {
   display: inline-block;
   width: 24px;
   height: 24px;
   border-radius: 4px;
 }
-.seriesFrame .glasses .cardFooter .coffee {
+.seriesOptical .glasses .cardFooter .coffee {
   background-color: #5F3E2D;
   margin-right: 8px;
 }
-.seriesFrame .glasses .cardFooter .brown {
+.seriesOptical .glasses .cardFooter .brown {
   background-color: #B75929;
-}
-.seriesFrame .pagination {
-  display: flex;
-}
-.seriesFrame .pagination .page {
-  border: 1px solid #555555;
-  padding: 12px 16px;
-  font-size: 18px;
-}
-.seriesFrame .pagination .page2 {
-  background-color: #000000;
-  color: #ffffff;
-}
-.seriesFrame .pagination .next, .seriesFrame .pagination .prev {
-  font-size: 19px;
-}
-.seriesFrame .pagination .next {
-  background-color: #F2F2F2;
 }
 
 @media (max-width: 992px) {
-  .seriesFrame .glasses .card {
+  .seriesOptical .glasses .card {
     width: 45%;
   }
 }
 @media (max-width: 768px) {
-  .seriesFrame .seriesOptions {
+  .seriesOptical .seriesOptions {
     display: none;
   }
-  .seriesFrame .seriesOptions_s {
+  .seriesOptical .seriesOptions_s {
     display: flex;
   }
-  .seriesFrame .pictures .pic_l {
+  .seriesOptical .pictures .pic_l {
     content: url(/assets/images/product-header-sm-1.png);
   }
-  .seriesFrame .pictures .pic_r {
+  .seriesOptical .pictures .pic_r {
     content: url(/assets/images/product-header-sm-2.png);
   }
-  .seriesFrame .glasses {
+  .seriesOptical .glasses {
     gap: 40px 24px;
   }
-  .seriesFrame .glasses .card {
+  .seriesOptical .glasses .card {
     width: 45%;
   }
 }
 @media (max-width: 375px) {
-  .seriesFrame {
+  .seriesOptical {
     padding-bottom: 64px;
   }
-  .seriesFrame .pictures {
+  .seriesOptical .pictures {
     margin-bottom: 40px;
   }
-  .seriesFrame .seriesName_ch {
+  .seriesOptical .seriesName_ch {
     margin-bottom: 24px;
   }
-  .seriesFrame .seriesOptions_s {
+  .seriesOptical .seriesOptions_s {
     font-size: 16px;
   }
-  .seriesFrame .seriesOptions_s li a {
+  .seriesOptical .seriesOptions_s li a {
     padding-top: 16px;
-    padding-bottom: 16px;
+    padding-bottom: 8px;
   }
-  .seriesFrame .glasses {
+  .seriesOptical .glasses {
     gap: 24px;
     margin-bottom: 64px;
   }
-  .seriesFrame .glasses .card {
+  .seriesOptical .glasses .card {
     width: 98%;
   }
-  .seriesFrame .pagination .page {
+}
+.seriesSunglasses {
+  padding-bottom: 80px;
+}
+.seriesSunglasses .seriesOptions, .seriesSunglasses .seriesOptions_s {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 32px;
+  border-bottom: 1px solid #DCDCDC;
+}
+.seriesSunglasses .seriesOptions .choose, .seriesSunglasses .seriesOptions_s .choose {
+  border-bottom: 8px solid #AA0601;
+}
+.seriesSunglasses .seriesOptions .notChoose, .seriesSunglasses .seriesOptions_s .notChoose {
+  border-bottom: 8px solid rgba(0, 0, 0, 0);
+}
+.seriesSunglasses .seriesOptions li, .seriesSunglasses .seriesOptions_s li {
+  flex-grow: 1;
+  text-align: center;
+  border-left: 1px solid #DCDCDC;
+  border-right: 1px solid #DCDCDC;
+}
+.seriesSunglasses .seriesOptions a, .seriesSunglasses .seriesOptions_s a {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: block;
+  text-decoration: none;
+  color: #000000;
+}
+.seriesSunglasses .seriesOptions_s {
+  display: none;
+}
+.seriesSunglasses .pictures {
+  display: flex;
+  margin-bottom: 80px;
+}
+.seriesSunglasses .seriesName {
+  font-size: 42px;
+  text-align: center;
+}
+.seriesSunglasses .seriesName_ch {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+.seriesSunglasses .products {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.seriesSunglasses .glasses {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px 24px;
+  width: 100%;
+  margin-bottom: 80px;
+}
+.seriesSunglasses .glasses .card {
+  width: 30%;
+  flex-grow: 1;
+}
+.seriesSunglasses .glasses .cardBody {
+  font-size: 24px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.seriesSunglasses .glasses .cardBody p {
+  text-align: justify;
+}
+.seriesSunglasses .glasses .cardBody .price {
+  color: #650300;
+  font-weight: 500;
+}
+.seriesSunglasses .glasses .cardFooter a {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+}
+.seriesSunglasses .glasses .cardFooter .coffee {
+  background-color: #5F3E2D;
+  margin-right: 8px;
+}
+.seriesSunglasses .glasses .cardFooter .brown {
+  background-color: #B75929;
+}
+.seriesSunglasses .pagination {
+  display: flex;
+}
+.seriesSunglasses .pagination .page {
+  border: 1px solid #555555;
+  padding: 12px 16px;
+  font-size: 18px;
+}
+.seriesSunglasses .pagination .page2 {
+  background-color: #000000;
+  color: #ffffff;
+}
+.seriesSunglasses .pagination .next, .seriesSunglasses .pagination .prev {
+  font-size: 19px;
+}
+.seriesSunglasses .pagination .next {
+  background-color: #F2F2F2;
+}
+
+@media (max-width: 992px) {
+  .seriesSunglasses .glasses .card {
+    width: 45%;
+  }
+}
+@media (max-width: 768px) {
+  .seriesSunglasses .seriesOptions {
+    display: none;
+  }
+  .seriesSunglasses .seriesOptions_s {
+    display: flex;
+  }
+  .seriesSunglasses .pictures .pic_l {
+    content: url(/assets/images/product-header-sm-1.png);
+  }
+  .seriesSunglasses .pictures .pic_r {
+    content: url(/assets/images/product-header-sm-2.png);
+  }
+  .seriesSunglasses .glasses {
+    gap: 40px 24px;
+  }
+  .seriesSunglasses .glasses .card {
+    width: 45%;
+  }
+}
+@media (max-width: 375px) {
+  .seriesSunglasses {
+    padding-bottom: 64px;
+  }
+  .seriesSunglasses .pictures {
+    margin-bottom: 40px;
+  }
+  .seriesSunglasses .seriesName_ch {
+    margin-bottom: 24px;
+  }
+  .seriesSunglasses .seriesOptions_s {
+    font-size: 16px;
+  }
+  .seriesSunglasses .seriesOptions_s li a {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .seriesSunglasses .glasses {
+    gap: 24px;
+    margin-bottom: 64px;
+  }
+  .seriesSunglasses .glasses .card {
+    width: 98%;
+  }
+  .seriesSunglasses .pagination .page {
     font-size: 16px;
     padding: 12px 13px;
+  }
+}
+.background_blog_top {
+  background-color: #650300;
+}
+
+.blog_top {
+  color: #ffffff;
+  display: flex;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  font-size: 20px;
+  font-family: "Roboto", "serif";
+  align-items: center;
+}
+.blog_top .nav_sec {
+  display: flex;
+  margin-right: auto;
+  gap: 48px;
+  font-weight: bold;
+}
+.blog_top a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.blog {
+  padding-top: 96px;
+  padding-bottom: 80px;
+}
+.blog h2 {
+  border-left: 8px solid #9F1213;
+  padding-left: 16px;
+  margin-bottom: 32px;
+}
+.blog .posts {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  margin-bottom: 124px;
+}
+.blog .posts .card {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+.blog .posts .imgBtn {
+  width: 50%;
+  display: block;
+  flex-shrink: 1;
+}
+.blog .posts .imgBtn img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.blog .posts .article {
+  width: 50%;
+  flex-shrink: 1;
+  display: flex;
+  flex-direction: column;
+}
+.blog .posts .article h3 {
+  font-size: 32px;
+  color: #650300;
+}
+.blog .posts .date {
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.blog .posts .date h4 {
+  font-size: 20px;
+}
+.blog .posts .date p {
+  font-size: 16px;
+}
+.blog .posts .content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.blog .posts .content p {
+  font-size: 20px;
+  margin-bottom: auto;
+  color: #555555;
+}
+.blog .posts .content .more {
+  align-self: flex-end;
+  text-decoration: none;
+  color: #650300;
+  font-family: "Noto Sans TC", serif;
+  font-size: 36px;
+}
+
+@media (max-width: 768px) {
+  .blog {
+    padding-top: 80px;
+  }
+  .blog h2 {
+    margin-bottom: 40px;
+  }
+  .blog .posts {
+    gap: 24px;
+    margin-bottom: 80px;
+  }
+  .blog .posts .article h3 {
+    font-size: 24px;
+  }
+  .blog .posts .article .date {
+    margin-bottom: 4px;
+  }
+  .blog .posts .article .date h4 {
+    font-size: 16px;
+  }
+  .blog .posts .content {
+    display: block;
+  }
+  .blog .posts .content p {
+    font-size: 16px;
+    display: inline;
+  }
+  .blog .posts .content .more {
+    font-size: 16px;
+    color: #000;
+  }
+}
+@media (max-width: 375px) {
+  .background_blog_top {
+    display: none;
+  }
+  .blog {
+    padding-top: 40px;
+    padding-bottom: 64px;
+  }
+  .blog h2 {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+  .blog .posts {
+    margin-bottom: 64px;
+  }
+  .blog .posts .card {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .blog .posts .content {
+    display: none;
+  }
+  .blog .posts .imgBtn, .blog .posts .article {
+    width: 100%;
   }
 }/*# sourceMappingURL=all.css.map */
